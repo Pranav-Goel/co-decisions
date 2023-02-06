@@ -1,0 +1,36 @@
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: 
+CoDecision_Agreement_Rate ~ Same_State + Same_Party + Speech_TFIDF_Cosine_Sim +  
+    (1 | Actor_1) + (1 | Actor_2)
+   Data: pairwise_data
+Weights: v
+
+      AIC       BIC    logLik  deviance  df.resid 
+ 489229.8  489286.4 -244608.9  489217.8     92484 
+
+Scaled residuals: 
+     Min       1Q   Median       3Q      Max 
+-11.1278  -0.7841  -0.0555   0.8615   8.5736 
+
+Random effects:
+ Groups  Name        Variance Std.Dev.
+ Actor_1 (Intercept) 0.07462  0.2732  
+ Actor_2 (Intercept) 0.09395  0.3065  
+Number of obs: 92490, groups:  Actor_1, 432; Actor_2, 432
+
+Fixed effects:
+                        Estimate Std. Error z value Pr(>|z|)    
+(Intercept)             0.302620   0.023180   13.05   <2e-16 ***
+Same_State              0.055361   0.003641   15.21   <2e-16 ***
+Same_Party              0.829807   0.001770  468.94   <2e-16 ***
+Speech_TFIDF_Cosine_Sim 1.045378   0.034412   30.38   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) Sm_Stt Sm_Prt
+Same_State   0.165              
+Same_Party   0.034 -0.003       
+S_TFIDF_C_S -0.484 -0.046 -0.107
