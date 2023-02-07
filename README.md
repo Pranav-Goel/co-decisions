@@ -40,10 +40,16 @@ To work with our example data, following on the step 1 command for our example, 
 ### Reference
 ---
 
-We note that the mixed effects modeling approach (and some decisions used herein) derived from co-voting work by Ringe et al (2013): **Ringe, Nils, Jennifer Nicoll Victor, and Justin H. Gross. "Keeping your friends close and your enemies closer? Information networks in legislative politics." British Journal of Political Science 43, no. 3 (2013): 601-628.** 
+If you use this repository, please cite it as: **Goel, P. (2023). Modeling Co-Decisions to Understand How Pairs of Actors Differ/Agree in their Decision-Making (Version 1.0.0) [Computer software]. https://github.com/Pranav-Goel/co-decisions**. In addition, cite the co-voting work by Ringe et al as: **Ringe, Nils, Jennifer Nicoll Victor, and Justin H. Gross. "Keeping your friends close and your enemies closer? Information networks in legislative politics." British Journal of Political Science 43, no. 3 (2013): 601-628.**, since we note that the mixed effects modeling approach and some choices made in this repository are derived from that work (our implementation offers a more generalized framework to conduct experiments like the ones conducted in Ringe et al (2013)).  
 
-Our implementation offers a more generalized framework to conduct experiments like the ones conducted in the above study. 
-
-python create_pairwise_data_file.py --data data/example/ --output data/example/output/
-
-Rscript mixed_effects_model.R data/example/decisions.csv data/example/output/pairwise_data.csv data/example/output/results.txt
+BibTeX for our software: 
+`
+@software{Goel_Modeling_Co-Decisions_to_2023,
+author = {Goel, Pranav},
+month = {2},
+title = {{Modeling Co-Decisions to Understand How Pairs of Actors Differ/Agree in their Decision-Making}},
+url = {https://github.com/Pranav-Goel/co-decisions},
+version = {1.0.0},
+year = {2023}
+}
+`
