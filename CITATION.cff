@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Goel"
+  given-names: "Pranav"
+  orcid: "https://orcid.org/0000-0003-1037-2687"
+title: "Modeling Co-Decisions to Understand How Pairs of Actors Differ/Agree in their Decision-Making"
+version: 1.0.0
+date-released: 2023-02-06
+url: "https://github.com/Pranav-Goel/co-decisions"
