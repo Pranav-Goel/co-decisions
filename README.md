@@ -26,7 +26,7 @@ Please ensure all required Python libraries are installed (presented in `require
 
 **Step 1:** Run code to use individual actor-level data and prepare pairwise data file: `python create_pairwise_data_file.py --data <path-to-data-directory> --output <path-to-directory-for-storing-output-file>`
 
-To work with out example data, run: `python create_pairwise_data_file.py --data data/example/ --output data/example/output/`
+To work with out example data, run: `python create_pairwise_data_file.py --data data/example/ --output data/example/output/  --add_epsilon`
 
 To view all the arguments that can be passed to the script and what they entail, run: `python create_pairwise_data_file.py -h`
 
